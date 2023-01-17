@@ -3,6 +3,7 @@
     border:1px solid black;
     margin: 1em 0;
     padding: 1em;
+    border-radius: 30px;
 
 }
 .playerTitle{
@@ -11,7 +12,7 @@
 .playerPoints{
  text-align: center;
  font-size: 4rem;
- color:moccasin;
+ color:rgb(255, 255, 255);
 }
 .player1{
     background-color: rgba(194, 61, 61, 0.834);
