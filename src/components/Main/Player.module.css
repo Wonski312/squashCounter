@@ -1,0 +1,21 @@
+.playerBox{
+    background-color: #fff;
+    border:1px solid black;
+    margin: 1em 0;
+    padding: 1em;
+
+}
+.playerTitle{
+   text-transform: uppercase;
+}
+.playerPoints{
+ text-align: center;
+ font-size: 4rem;
+ color:moccasin;
+}
+.player1{
+    background-color: rgba(194, 61, 61, 0.834);
+}
+.player2{
+    background-color: rgba(67, 67, 192, 0.777);
+}
