@@ -3,11 +3,16 @@ import { createSlice } from '@reduxjs/toolkit';
 const counterSlice = createSlice({
     name:'counter',
     initialState: {
-        points: 0,
+ player1Points: 0, player2Points:0         
     },
     reducers:{
-        increment(state) {
-            state.points++;
+        increment(state, action) {
+            const playerId = action.payload 
+        if(playerId === 1){
+            state.player1Points++
+        }else{
+            state.player2Points++
+        }
         },
     }
     
