@@ -5,12 +5,14 @@ import { counterActions } from "../../store/store";
 const Player = (props) => {
 const dispatch = useDispatch();
 
-	const counterPlayer1 = useSelector(state => state.player1Points);
-	const counterPlayer2 = useSelector(state => state.player2Points);
+	const counterPlayer1 = useSelector(state => state.counter.player1Points);
+	const counterPlayer2 = useSelector(state => state.counter.player2Points);
 	const playerColors =
 		props.id === 1
 			? `${classes.playerBox} ${classes.player1}`
 			: `${classes.playerBox} ${classes.player2}`;
+
+
 
 const clickHandler = () =>{
 dispatch(counterActions.increment(props.id));
