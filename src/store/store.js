@@ -8,7 +8,9 @@ const counterSlice = createSlice({
 		player1Sets: 0,
 		player2Sets: 0,
 		modalVisible: false,
-		addinfo: null
+		addinfo: null,
+		endGame: false
+
 	},
 	reducers: {
 		increment(state, action) {
@@ -24,6 +26,7 @@ const counterSlice = createSlice({
 				state.player1Sets++;
 				state.modalVisible = true;
 				state.player1Points = 0;
+				state.player2Points = 0;
 				state.addinfo = {
 					player: action.payload
 				}
@@ -33,9 +36,15 @@ const counterSlice = createSlice({
 				state.player2Sets++;
 				state.modalVisible = true;
                 state.player2Points = 0;
+                state.player1Points = 0;
 				state.addinfo = {
 					player: playerId
 				}
+			}
+
+			if(state.player1Sets === 5 || state.player2Sets ===5 ){
+				state.endGame = true;
+				
 			}
 		},
 
