@@ -1,17 +1,13 @@
-### `npm run build`
+### Squash Points Counter
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+My latest project is directly connected with my new hobby. Squash game (absolutly lovely game) very dinamic play and compiting with a friend is somthing I was looking for.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+App features counting points for each player and sets wins.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Future updates will cover:
 
-### Deployment
+-[ ]Adding score to database -[ ]Adding player name before start of counting points -[ ]Authentication and remembering previous players names.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## live demo of app can be seen at :
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Squash Points Counter Live Demo](https://squash-counter.vercel.app/)
