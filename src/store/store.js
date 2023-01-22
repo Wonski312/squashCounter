@@ -9,7 +9,7 @@ const counterSlice = createSlice({
 		player2Sets: 0,
 		modalVisible: false,
 		addinfo: null,
-		endGame: false
+		endGame: false,
 
 	},
 	reducers: {
@@ -50,6 +50,14 @@ const counterSlice = createSlice({
 
 		toggleModal(state){
 			state.modalVisible = false
+		},
+		playAgain(state){
+			state.player1Points = 0;
+			state.player2Points = 0;
+			state.player1Sets = 0;
+			state.player2Sets = 0;
+			state.endGame = false;
+			state.modalVisible= false;
 		}
 		
 	},
