@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
+import uiSlice from "./ui-slice";
 const counterSlice = createSlice({
 	name: "counter",
 	initialState: {
@@ -76,7 +77,7 @@ state.showWinPlayer = true;
 
 
 const store = configureStore({
-	reducer: {counter: counterSlice.reducer, winnerModal: winnerSlice.reducer}
+	reducer: {counter: counterSlice.reducer, winnerModal: winnerSlice.reducer, ui: uiSlice.reducer}
 });
 
 export const modalActions = winnerSlice.reducer;
