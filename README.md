@@ -7,7 +7,7 @@ App features counting points for each player and sets wins.
 Future updates will cover:
 
 - [ ] Adding score to database 
-- [ ] Adding player name before start of counting points 
+- [x] Adding player name before start of counting points 
 - [ ] Authentication and remembering previous players names.
 
 It's a REACT app:
