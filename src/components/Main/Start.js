@@ -12,13 +12,15 @@ const Start = () =>{
     const dispatch = useDispatch()
     const player1 = useRef('')
     const player2 = useRef('')
-
-
-const startHandler = (event) =>{
-event.preventDefault();
-// console.log(player1.current.value);
-// console.log(player2.current.value);
-dispatch(uiActions.toogleStart({player1name: player1.value, player2name: player2.value }))
+    // const P1 = useSelector(state => state.ui.P1name);
+    
+    const startHandler = (event) =>{
+        event.preventDefault();
+        console.log(player1.current.value);
+        console.log(player2.current.value);
+        
+        dispatch(uiActions.toogleStart({player1name: player1.current.value, player2name: player2.current.value }))
+        // console.log(P1);
 }
 
 

@@ -12,7 +12,7 @@ import { Fragment } from 'react';
 
 function App() {
   const endGame = useSelector(state => state.counter.endGame);
-
+const startGame = useSelector(state => state.ui.startApp)
   const modalVisible  = useSelector(state =>state.counter.modalVisible);
   const addInfo = useSelector(state => state.counter.addinfo)
  
@@ -20,14 +20,14 @@ function App() {
     
   <Wrapper className={classes.mainPage}>
 
-    <Start></Start>
-    {!endGame ?
+    {startGame ? <Start></Start> : !endGame ?
     <Fragment>
 <SetsPoints />
     <Main></Main>
     {modalVisible && <WinnerModal player={addInfo.player}></WinnerModal>}
     </Fragment>
      : <EndGame winner={addInfo.player}/>}
+    
   </Wrapper>
   ) 
 }

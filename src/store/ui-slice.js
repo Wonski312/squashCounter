@@ -14,8 +14,9 @@ toogleStart(state, action){
     state.P1name = action.payload.player1name;
     state.P2name = action.payload.player2name;
 
-    console.log(uiSlice.initialState.P1name);
-    console.log(uiSlice.initialState.P2name);
+    // console.log(uiSlice.initialState.P1name);
+    // console.log(uiSlice.initialState.P2name);
+    // console.log(uiSlice.initialState.startApp);
 }
     }
 })
