@@ -6,6 +6,7 @@ import Player from "./Player";
 import { useEffect } from "react";
 const Main = () => {
 	const player1title = useSelector(state => state.ui.P1name);
+	const player2title = useSelector(state => state.ui.P2name);
 	
 	const players = [
 		{key: 1,
@@ -13,7 +14,7 @@ const Main = () => {
 		id: 1
 		},
 		{key: 2,
-			title: 'player 2',
+			title: player2title,
 			id:2
 			}
 	]
